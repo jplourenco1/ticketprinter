@@ -1,0 +1,14 @@
+Things to do here in order of priority:
+
+Implement feature to run commands and send the output to the ticket.
+Implement 'template' command line option or data field to set a specific template.
+Implement 'components' data field on YAML to set the components used.
+Implement 'labels' data field on YAML to set the labels used.
+Change data structure so each case have its own set of commands.
+Implement JIRA validation of user and pass, optionally storing them on a cache file. 
+Implement components listing using components API, maybe also implement editing and deleting them.
+
+Future improvements, to do after the above features are implemented:
+
+A menu interface, with options to the main features and using $EDITOR to edit templates.
+Investigate Zephyr API, propably we could implement a feature to include the generated tickets on a specific test folder

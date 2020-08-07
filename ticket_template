@@ -1,0 +1,14 @@
+*DESCRIPTION*
+ This test case aims to check if a possible regression was introduced on %use_case% option of Openvpn module by the tested branch
+
+*PRE-REQUIREMENTS*
+ OpenVPN server and client
+
+*STEPS*
+ # Set proper data on client YAML (server name and IP)
+ ## No client configuration options should be set
+ # Set %use_case% option on server hash property (CCD exclusive: true)
+ # Execute puppet agent on Server
+ # Considering success on the previous step, execute puppet on agent
+
+*EXPECTED RESULTS*
