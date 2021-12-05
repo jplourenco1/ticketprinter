@@ -8,7 +8,7 @@
  # Set proper data on client YAML (server name and IP)
  ## No client configuration options should be set
  # Set %use_case% option on server hash property (CCD exclusive: true)
- # Execute puppet agent on Server
+ # Execute the following commands: %commands%
  # Considering success on the previous step, execute puppet on agent
 
 *EXPECTED RESULTS*
