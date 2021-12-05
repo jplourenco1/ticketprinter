@@ -71,7 +71,7 @@ def get_template
 end
 
 def generate_description(use_case, commands)
-  description = get_template.gsub("%use_case%", use_case.to_s)
+  description = get_template.gsub("%use_case%", use_case.to_s).gsub("%commands%", commands.join('\n'))
 end
 
 def generate_tickets(opts, json_template)
@@ -110,7 +110,7 @@ def main
   read_yml(opts)
   tickets = generate_tickets(opts, $json_template)
   dry_run(tickets) if opts['dry-run']
-  send_tickets(opts, tickets) # NOT TESTED YET
+  send_tickets(opts, tickets) 
   
 rescue Errno::ENOENT => e
   abort e.message
